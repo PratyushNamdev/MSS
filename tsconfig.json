@@ -22,7 +22,13 @@
     "paths": {
       "@/*": ["./*"],
       "@Atoms": ["components/atoms"],
-      "@Atoms/*": ["components/atoms/*"]
+      "@Atoms/*": ["components/atoms/*"],
+      "@Components": ["components/components"],
+      "@Components/*": ["components/components/*"],
+      "@UI": ["components/ui"],
+      "@UI/*": ["components/ui/*"],
+      "@Constants": ["constants"],
+      "@Constants/*": ["constants/*"]
     }
   },
   "include": [

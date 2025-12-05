@@ -96,7 +96,7 @@ export function HeroSection() {
         </div>
 
         {/* md+ layout: split image + text */}
-        <div className="hidden md:flex md:h-[93dvh]">
+        <div className="hidden md:flex md:h-[91dvh]">
           {/* Left image half */}
           <div className="w-1/2 relative">
             <Image

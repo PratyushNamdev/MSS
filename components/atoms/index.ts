@@ -1,7 +1,4 @@
 import ToggleTheme from "./ToggleTheme";
 import ThemeProvider from "./Theme";
-
-export {
-    ToggleTheme,
-    ThemeProvider
-}
+import Counter from "./Counter";
+export { ToggleTheme, ThemeProvider, Counter };

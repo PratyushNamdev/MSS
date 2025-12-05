@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import MobileMenu from "./MobileMenu"
+import Link from "next/link";
+import Image from "next/image";
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   return (
@@ -10,7 +10,7 @@ export default function Header() {
       <div className="max-w-[1400px] mx-auto flex items-center justify-between px-4 py-3">
         <div className="flex items-center gap-2">
           <Image
-            src="/logo1.jpg"
+            src="/logo1.png"
             alt="Company Logo"
             width={40}
             height={40}
@@ -30,9 +30,8 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
-
 
 function NavLinks({ onClick }: { onClick?: () => void }) {
   const links = [
@@ -40,7 +39,7 @@ function NavLinks({ onClick }: { onClick?: () => void }) {
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
     { href: "/career", label: "Career" },
-  ]
+  ];
 
   return (
     <>
@@ -55,5 +54,5 @@ function NavLinks({ onClick }: { onClick?: () => void }) {
         </Link>
       ))}
     </>
-  )
+  );
 }
