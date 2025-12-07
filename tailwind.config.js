@@ -11,12 +11,8 @@ module.exports = {
       colors: {
         // 🎨 Your two main colors
         primary: {
-          DEFAULT: "#143D60", // deep blue
-          foreground: "#ffffff", // text color on blue
-        },
-        accent: {
-          DEFAULT: "#4ade80", // Tailwind green-400
-          foreground: "#000000", // text color on green
+          DEFAULT: "#101828", // deep blue
+          foreground: "#ffffff",
         },
       },
     },
