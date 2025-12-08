@@ -24,7 +24,7 @@ import {
   PopoverContent,
   PopoverAnchor,
 } from "./popover";
-
+import { AspectRatio } from "./aspect-ratio";
 export {
   Sheet,
   SheetTrigger,
@@ -46,4 +46,5 @@ export {
   PopoverContent,
   PopoverAnchor,
   Button,
+  AspectRatio,
 };

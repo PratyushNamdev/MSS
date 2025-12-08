@@ -3,4 +3,5 @@ import ThemeProvider from "./Theme";
 import Counter from "./Counter";
 import SectionHeading from "./SectionHeading";
 import MovingCards from "./MovingCards";
-export { ToggleTheme, ThemeProvider, Counter, SectionHeading, MovingCards };
+import AnimatedCards from "./AnimatedCards";
+export { ToggleTheme, ThemeProvider, Counter, SectionHeading, MovingCards, AnimatedCards };
