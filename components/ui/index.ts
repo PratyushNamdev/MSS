@@ -25,6 +25,17 @@ import {
   PopoverAnchor,
 } from "./popover";
 import { AspectRatio } from "./aspect-ratio";
+import { Input } from "./input";
+import { Label } from "./label";
+import { Textarea } from "./textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./select";
+import { Toaster } from "./sonner";
 export {
   Sheet,
   SheetTrigger,
@@ -47,4 +58,13 @@ export {
   PopoverAnchor,
   Button,
   AspectRatio,
+  Input,
+  Label,
+  Textarea,
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+  Toaster,
 };

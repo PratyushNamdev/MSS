@@ -2,6 +2,7 @@
 
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import Link from "next/link";
 
 import { useEffect, useState } from "react";
 
@@ -44,7 +45,7 @@ export const AnimatedCards = ({
   };
   return (
     <div className="mx-auto max-w-sm pt-4 md:pt-16 px-4 pb-4 font-sans antialiased md:max-w-7xl md:px-8 lg:px-12 overflow-hidden">
-      <div className="relative grid grid-cols-1 gap-24 md:grid-cols-2">
+      <div className="relative grid grid-cols-1 gap-24 lg:gap-28 md:grid-cols-2">
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
@@ -83,7 +84,7 @@ export const AnimatedCards = ({
                     width={400}
                     height={400}
                     draggable={false}
-                    className="h-full w-full rounded-3xl object-cover object-center"
+                    className="h-full w-full rounded-3xl object-cover object-top"
                   />
                 </motion.div>
               ))}
@@ -140,7 +141,22 @@ export const AnimatedCards = ({
               ))}
             </motion.p>
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0">
+          <div className="flex gap-4 pt-12 md:pt-0 items-center">
+            <Link href={"/murti-team"} className="text-sm">
+              <div
+                className="
+                    bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold 
+                    py-3 px-6 md:px-8 
+                    rounded-xl
+                    transition duration-300 transform hover:scale-[1.02] 
+                    uppercase tracking-wider text-xs md:text-sm cursor-pointer
+                  "
+              >
+                <span className="inline-flex items-center gap-2">
+                  Meet the Team
+                </span>
+              </div>
+            </Link>
             <button
               onClick={handlePrev}
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-teal-300 cursor-pointer"

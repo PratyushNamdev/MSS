@@ -4,31 +4,24 @@ const Team = () => {
   const cards = [
     {
       quote:
-        "We designed our MSS platform with one core mission — to give organizations complete visibility, continuous threat monitoring, and absolute confidence in their security posture, 24/7.",
-      name: "Prashant Mishra",
-      designation: "Founder & CEO",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3",
+        "A retired Nayeb Subedar from the Indian Army, Mr. Mishra founded MSS Security with a vision to bring military-grade discipline, integrity, and professionalism into the security industry.",
+      name: "Retd. Nayeb Subedar, Mr. Pramod Kumar Mishra, Indian Army",
+      designation: "Founder & Managing Director",
+      src: "https://res.cloudinary.com/dggdpeaw4/image/upload/v1765268429/WhatsApp_Image_2025-12-09_at_12.50.48_d1dedf9c_jacw6b.jpg",
     },
     {
       quote:
         "From secure infrastructure design to real-time incident response, our focus has always been building resilient systems that protect businesses against evolving cyber threats.",
-      name: "Prashant Mishra",
-      designation: "Co-Founder & CTO",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
+      name: "Mr. Prashant Mishra",
+      designation: "Director – Operations & Business Growth",
+      src: "https://res.cloudinary.com/dggdpeaw4/image/upload/v1765269701/WhatsApp_Image_2025-12-09_at_12.53.10_77f09677_flaxfw.jpg",
     },
     {
       quote:
         "Our operations team leverages automation, continuous monitoring, and strict governance controls to ensure every client environment remains protected and performant at scale.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
+      name: "Mr. Sanjay Mishra",
+      designation: "Advisor & Head of Field Operations",
       src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
-    },
-    {
-      quote:
-        "Scalability, performance, and security must grow together. Our engineering philosophy ensures secure architectures that never compromise speed, reliability, or compliance.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3",
     },
   ];
 

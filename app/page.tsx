@@ -4,6 +4,7 @@ import {
   StatsStrip,
   Testimonials,
   Team,
+  ContactForm,
 } from "@/components/molecules";
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <Services />
       <Testimonials />
       <Team />
-      <div className="h-60"></div>
+      <ContactForm />
       <div className="h-60"></div>
     </div>
   );
