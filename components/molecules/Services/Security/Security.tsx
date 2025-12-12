@@ -61,18 +61,3 @@ export default function SecurityServices() {
     </div>
   );
 }
-
-function InfoRow({
-  label,
-  children,
-}: {
-  label: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="flex flex-col sm:flex-row sm:items-start">
-      <span className="w-[110px] text-white shrink-0">{label}</span>
-      <span className="sm:ml-6 mt-1 sm:mt-0">{children}</span>
-    </div>
-  );
-}

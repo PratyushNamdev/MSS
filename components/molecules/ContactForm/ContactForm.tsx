@@ -46,6 +46,7 @@ const ContactForm = () => {
       toast.error("Unexpected Error Occured!", {
         className: "text-black",
       });
+      console.log(err);
     } finally {
       setIsSubmitting(false);
     }
