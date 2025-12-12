@@ -15,7 +15,6 @@ export default function Home() {
       <Testimonials />
       <Team />
       <ContactForm />
-      <div className="h-60"></div>
     </div>
   );
 }

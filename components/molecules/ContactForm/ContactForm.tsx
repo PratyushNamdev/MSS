@@ -56,7 +56,7 @@ const ContactForm = () => {
       id="contact"
       className="w-full -mt-6 md:-mt-10 pt-32 pb-24 px-4 md:px-8 lg:px-16"
     >
-      <div className="relative mx-auto max-w-6xl border-t border-slate-800/70 pt-10">
+      <div className="relative mx-auto max-w-7xl border-t border-slate-800/70 pt-10">
         {/* subtle gradient tie-in with the team section above */}
         <div
           className="pointer-events-none absolute top-0 left-0 h-px w-full 

@@ -147,6 +147,26 @@ export const Compare = ({
     },
     [handleMove, autoplay]
   );
+  
+  const norm = Math.abs(sliderXPercent - 50) / 50;
+  const targetFadeAtHalf = 0.55; 
+  const fadeExponent = Math.log(targetFadeAtHalf) / Math.log(0.5); // ≈ 0.8626
+
+  const fadeProgress = Math.pow(norm, fadeExponent);
+
+  let beforeOpacity: number;
+  let afterOpacity: number;
+
+  if (sliderXPercent <= 50) {
+    beforeOpacity = 1;
+    afterOpacity = 1 - fadeProgress;
+  } else {
+    afterOpacity = 1;
+    beforeOpacity = 1 - fadeProgress;
+  }
+
+  beforeOpacity = Math.max(0, Math.min(1, beforeOpacity));
+  afterOpacity = Math.max(0, Math.min(1, afterOpacity));
 
   return (
     <div
@@ -165,17 +185,27 @@ export const Compare = ({
       onTouchEnd={handleTouchEnd}
       onTouchMove={handleTouchMove}
     >
-      {/* BEFORE / AFTER pills */}
-      <div className="pointer-events-none absolute top-3 left-3 z-50">
+      <motion.div
+        initial={false}
+        animate={{ opacity: afterOpacity }}
+        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+        className="pointer-events-none absolute top-3 left-3 z-50"
+      >
         <div className="rounded-full border border-slate-500/60 bg-slate-950/80 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.18em] text-gray-200">
           Before MSS
         </div>
-      </div>
-      <div className="pointer-events-none absolute top-3 right-3 z-50">
+      </motion.div>
+
+      <motion.div
+        initial={false}
+        animate={{ opacity: beforeOpacity }}
+        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+        className="pointer-events-none absolute top-3 right-3 z-50"
+      >
         <div className="rounded-full border border-teal-400/80 bg-teal-400/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-950 shadow-[0_0_18px_rgba(45,212,191,0.65)]">
           After MSS
         </div>
-      </div>
+      </motion.div>
 
       <AnimatePresence initial={false}>
         <motion.div

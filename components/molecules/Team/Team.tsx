@@ -28,7 +28,7 @@ const Team = () => {
   return (
     <div>
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative mt-12 mx-auto max-w-6xl mb-14 flex flex-col gap-6 pt-10">
+        <div className="relative mt-12 mx-auto max-w-7xl mb-14 flex flex-col gap-6 pt-10">
           {/* Gradient Glow Border */}
           <div
             className="pointer-events-none absolute top-0 left-0 w-full h-px 
