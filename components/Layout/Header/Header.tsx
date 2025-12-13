@@ -10,11 +10,11 @@ import {
   NavigationMenuContent,
   NavigationMenuLink,
   NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
+} from "@UI";
 import MobileMenu from "./MobileMenu";
 import { useState } from "react";
 import { Menu } from "lucide-react";
-
+import { serviceLinks } from "@Constants";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -61,7 +61,7 @@ function DesktopNav() {
           <NavigationMenuLink asChild>
             <Link
               href="/"
-              className="px-3 py-2 rounded-md hover:text-teal-300 transition"
+              className="px-3 py-2 rounded-md hover:text-teal-300 transition hover:bg-transparent focus:bg-transparent active:bg-transparent data-active:bg-transparent data-[state=open]:bg-transparent"
             >
               Home
             </Link>
@@ -69,7 +69,33 @@ function DesktopNav() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-white hover:text-teal-300 bg-transparent data-[state=open]:bg-transparent data-[state=open]:text-teal-300">
+          <NavigationMenuTrigger
+            className="
+    group
+    bg-transparent
+    text-white
+
+    hover:text-teal-300
+    focus:text-white
+    active:text-white
+
+    data-[state=open]:text-teal-300
+    data-[state=open]:hover:text-teal-300
+    data-[state=open]:focus:text-teal-300
+
+    hover:bg-transparent
+    focus:bg-transparent
+    active:bg-transparent
+
+    data-[state=open]:bg-transparent
+    data-[state=open]:hover:bg-transparent
+    data-[state=open]:focus:bg-transparent
+
+    [&::before]:bg-transparent
+    [&::after]:bg-transparent
+    cursor-pointer
+  "
+          >
             Services
           </NavigationMenuTrigger>
 
@@ -77,8 +103,8 @@ function DesktopNav() {
             <ul className="flex flex-col gap-2 text-sm text-gray-300">
               <li>
                 <Link
-                  href="/services/security"
-                  className="block px-2 py-1 rounded hover:text-teal-300 hover:bg-white/5 transition"
+                  href={serviceLinks.security}
+                  className="block px-2 py-1 rounded hover:text-teal-300 hover:bg-white/5 transition focus:bg-transparent active:bg-transparent data-active:bg-transparent data-[state=open]:bg-transparent"
                 >
                   Security Services
                 </Link>
@@ -86,7 +112,7 @@ function DesktopNav() {
 
               <li>
                 <Link
-                  href="/services/cleaning"
+                  href={serviceLinks.cleaningAndHygiene}
                   className="block px-2 py-1 rounded hover:text-teal-300 hover:bg-white/5 transition"
                 >
                   Cleaning & Hygiene
@@ -95,7 +121,7 @@ function DesktopNav() {
 
               <li>
                 <Link
-                  href="/services/facility"
+                  href={serviceLinks.facilityManagement}
                   className="block px-2 py-1 rounded hover:text-teal-300 hover:bg-white/5 transition"
                 >
                   Facility & Management
@@ -109,8 +135,8 @@ function DesktopNav() {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link
-              href="/team"
-              className="px-3 py-2 rounded-md hover:text-teal-300 transition"
+              href={serviceLinks.team}
+              className="px-3 py-2 rounded-md hover:text-teal-300 transition hover:bg-transparent focus:bg-transparent active:bg-transparent data-active:bg-transparent data-[state=open]:bg-transparent"
             >
               Team
             </Link>
@@ -121,8 +147,8 @@ function DesktopNav() {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link
-              href="/contact"
-              className="px-3 py-2 rounded-md hover:text-teal-300 transition"
+              href="/#contact"
+              className="px-3 py-2 rounded-md hover:text-teal-300 transition hover:bg-transparent focus:bg-transparent active:bg-transparent data-active:bg-transparent data-[state=open]:bg-transparent"
             >
               Contact
             </Link>
@@ -133,8 +159,8 @@ function DesktopNav() {
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Link
-              href="/about"
-              className="px-3 py-2 rounded-md hover:text-teal-300 transition"
+              href={serviceLinks.about}
+              className="px-3 py-2 rounded-md hover:text-teal-300 transition hover:bg-transparent focus:bg-transparent active:bg-transparent data-active:bg-transparent data-[state=open]:bg-transparent"
             >
               About
             </Link>

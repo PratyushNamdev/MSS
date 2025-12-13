@@ -36,6 +36,18 @@ import {
   SelectValue,
 } from "./select";
 import { Toaster } from "./sonner";
+import {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuContent,
+  NavigationMenuTrigger,
+  NavigationMenuLink,
+  NavigationMenuIndicator,
+  NavigationMenuViewport,
+  navigationMenuTriggerStyle,
+} from "./navigation-menu";
+
 export {
   Sheet,
   SheetTrigger,
@@ -67,4 +79,13 @@ export {
   SelectTrigger,
   SelectValue,
   Toaster,
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuContent,
+  NavigationMenuTrigger,
+  NavigationMenuLink,
+  NavigationMenuIndicator,
+  NavigationMenuViewport,
+  navigationMenuTriggerStyle,
 };

@@ -20,15 +20,19 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
-      "@Atoms": ["components/atoms"],
-      "@Atoms/*": ["components/atoms/*"],
-      "@Components": ["components/components"],
-      "@Components/*": ["components/components/*"],
       "@UI": ["components/ui"],
       "@UI/*": ["components/ui/*"],
+      "@layout": ["components/layout"],
+      "@layout/*": ["components/layout/*"],
+      "@Atoms": ["components/atoms"],
+      "@Atoms/*": ["components/atoms/*"],
+      "@Molecules": ["components/molecules"],
+      "@Molecules/*": ["components/molecules/*"],
+      "@Server": ["server"],
+      "@Server/*": ["server/*"],
       "@Constants": ["constants"],
-      "@Constants/*": ["constants/*"]
+      "@Constants/*": ["constants/*"],
+      "@/*": ["./*"]
     }
   },
   "include": [

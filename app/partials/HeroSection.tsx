@@ -2,6 +2,7 @@
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 export function HeroSection() {
   const heroImage =
     "https://res.cloudinary.com/dggdpeaw4/image/upload/v1762336972/unnamed_fujqaz.jpg";
@@ -34,19 +35,11 @@ export function HeroSection() {
 
           <div className="absolute inset-0 flex items-center justify-center px-6">
             <div className="max-w-xl text-center space-y-6">
-              {/* <div className="absolute inset-0 flex items-center justify-center px-6">
-            <div
-              className="max-w-xl text-center space-y-6 
-    bg-[#071423]/25 backdrop-blur-sm rounded-2xl p-6 border border-white/5 shadow-xl"
-            > */}
               <TypewriterEffect
                 words={words}
                 className="text-sm font-bold uppercase text-teal-300 tracking-widest inline-block border-b-2 border-teal-400 pb-1"
                 cursorClassName="bg-teal-300"
               />
-              {/* <p className="text-sm font-bold uppercase text-teal-300 tracking-widest inline-block border-b-2 border-teal-400 pb-1">
-                Murti Enterprises
-              </p> */}
 
               <motion.h1
                 initial={{ y: 50, opacity: 0 }}
@@ -78,18 +71,18 @@ export function HeroSection() {
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
                 className="flex flex-col sm:flex-row gap-3 justify-center"
               >
-                <a
+                <Link
                   href="#contact"
                   className="inline-block bg-teal-500 hover:bg-teal-600 text-black font-bold py-3 px-6 rounded-lg shadow-lg shadow-teal-700/30 transition-transform transform hover:scale-[1.02] uppercase tracking-wider text-sm"
                 >
                   Get a Free Consultation
-                </a>
-                <a
-                  href="/services"
+                </Link>
+                <Link
+                  href="#services"
                   className="inline-block border-2 border-white/30 hover:border-cyan-300 text-white py-3 px-6 rounded-lg transition-colors text-sm"
                 >
                   View All Services
-                </a>
+                </Link>
               </motion.div>
             </div>
           </div>
@@ -126,7 +119,7 @@ export function HeroSection() {
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="text-3xl  lg:text-7xl font-extrabold leading-tight"
+                className="text-3xl md:text-5xl xl:text-7xl font-extrabold leading-tight"
               >
                 <span className="text-white">Integrated</span>{" "}
                 <span className="block bg-clip-text text-transparent bg-linear-to-r from-teal-300 to-cyan-400">
@@ -152,18 +145,18 @@ export function HeroSection() {
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
                 className="pt-8 flex flex-col sm:flex-row gap-4"
               >
-                <a
-                  href="#contact"
+                <Link
+                  href="/#contact"
                   className="bg-teal-500 hover:bg-teal-600 text-gray-900 font-extrabold py-4 md:px-5 lg:px-10 rounded-xl shadow-2xl shadow-teal-700/50 transition duration-300 transform hover:scale-[1.02] uppercase tracking-wider text-sm"
                 >
                   Get a Free Consultation
-                </a>
-                <a
-                  href="/services"
+                </Link>
+                <Link
+                  href="/#services"
                   className="bg-transparent border-2 border-gray-600 hover:border-cyan-500 text-white font-semibold py-4 px-10 rounded-xl transition duration-300 hover:text-cyan-500 text-sm flex items-center justify-center"
                 >
                   View All Services
-                </a>
+                </Link>
               </motion.div>
             </div>
           </div>

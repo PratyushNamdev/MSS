@@ -1,2 +1,3 @@
 import { serviceData } from "./ServiceData";
-export { serviceData };
+import { serviceLinks } from "./ServiceLinks";
+export { serviceData, serviceLinks };

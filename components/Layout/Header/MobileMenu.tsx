@@ -18,6 +18,7 @@ import {
 
 import { useState } from "react";
 import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { serviceLinks } from "@Constants";
 const WP_NUMBER = process.env.NEXT_PUBLIC_WP_NUMBER;
 const wpLink = `https://wa.me/${WP_NUMBER}?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20MSS%20Group%27s%20Security%20and%20Facility%20Management%20services.`;
 
@@ -31,17 +32,17 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
 
   const services = [
     {
-      href: "/services/security",
+      href: serviceLinks.security,
       label: "Security Services",
       icon: <ShieldCheck className="inline-block mr-2 size-4" />,
     },
     {
-      href: "/services/cleaning",
+      href: serviceLinks.cleaningAndHygiene,
       label: "Cleaning & Hygiene",
       icon: <BrushCleaning className="inline-block mr-2 size-4" />,
     },
     {
-      href: "/services/facility",
+      href: serviceLinks.facilityManagement,
       label: "Facility & Management",
       icon: <HelpingHand className="inline-block mr-2 size-4" />,
     },
@@ -53,7 +54,6 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
         side="right"
         className="w-[85%] sm:w-[400px] max-w-full h-full bg-[#0f1724] text-gray-100 flex flex-col p-5 border-none"
       >
-        {/* ===== HEADER ===== */}
         <SheetHeader className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="relative h-10 w-10 rounded-md overflow-hidden">
@@ -76,7 +76,6 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
           </div>
         </SheetHeader>
 
-        {/* ===== NAVIGATION ===== */}
         <nav className="mt-6 flex-1 overflow-x-hidden">
           <ul className="space-y-4">
             {/* Home */}
@@ -90,7 +89,6 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
               </Link>
             </li>
 
-            {/* Services Accordion */}
             <li>
               <button
                 onClick={() => setServicesOpen(!servicesOpen)}
@@ -138,10 +136,9 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
               )}
             </li>
 
-            {/* About */}
             <li>
               <Link
-                href="/about"
+                href={serviceLinks.about}
                 onClick={() => onOpenChange(false)}
                 className="flex items-center gap-3 text-base font-medium hover:text-teal-300 transition-colors"
               >
@@ -149,10 +146,9 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
               </Link>
             </li>
 
-            {/* Team */}
             <li>
               <Link
-                href="/team"
+                href={serviceLinks.team}
                 onClick={() => onOpenChange(false)}
                 className="flex items-center gap-3 text-base font-medium hover:text-teal-300 transition-colors"
               >
@@ -160,10 +156,9 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
               </Link>
             </li>
 
-            {/* Contact */}
             <li>
               <Link
-                href="#contact"
+                href="/#contact"
                 onClick={() => onOpenChange(false)}
                 className="flex items-center gap-3 text-base font-medium hover:text-teal-300 transition-colors"
               >
@@ -173,7 +168,6 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
           </ul>
         </nav>
 
-        {/* ===== FOOTER / CTA ===== */}
         <div className="mt-auto pt-6 border-t border-white/10">
           <div className="flex flex-col gap-3">
             {/* Call CTA */}
@@ -185,7 +179,6 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
               Call Us
             </a>
 
-            {/* Request Quote */}
             <Link
               href={wpLink}
               target="_blank"
@@ -197,7 +190,6 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
               WhatsApp Us
             </Link>
 
-            {/* Footer */}
             <div className="flex items-center justify-between pt-3">
               <div>
                 <p className="text-xs text-gray-400">Email us</p>
