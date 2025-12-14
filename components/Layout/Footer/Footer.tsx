@@ -100,15 +100,14 @@ export default function Footer() {
                 </span>
                 <div className="flex-1">
                   <a
-                    href="tel:+911234567890"
+                    href={`tel:+${WP_NUMBER}`}
                     className="hover:text-white transition"
                   >
-                    +91 12345 67890
+                    +{WP_NUMBER}
                   </a>
                 </div>
               </div>
 
-              {/* Email */}
               <div className="flex items-start gap-3">
                 <span className="w-24 text-xs text-gray-400 shrink-0">
                   Email
@@ -130,7 +129,7 @@ export default function Footer() {
                 </span>
                 <div className="flex-1">
                   <address className="not-italic text-sm leading-relaxed">
-                    MSS Group HQ, Indore, Madhya Pradesh
+                    MSS Group HQ, Prayagraj Uttar Pradesh.
                   </address>
                 </div>
               </div>

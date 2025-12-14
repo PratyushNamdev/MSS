@@ -51,6 +51,18 @@ export default function Header() {
     </header>
   );
 }
+const navLinkClass = `
+  px-3 py-2 rounded-md transition
+  text-white
+  hover:text-teal-300
+  focus:text-white
+  active:text-white
+  visited:text-white
+
+  hover:bg-transparent
+  focus:bg-transparent
+  active:bg-transparent
+`;
 
 function DesktopNav() {
   return (
@@ -59,10 +71,7 @@ function DesktopNav() {
         {/* HOME */}
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link
-              href="/"
-              className="px-3 py-2 rounded-md hover:text-teal-300 transition hover:bg-transparent focus:bg-transparent active:bg-transparent data-active:bg-transparent data-[state=open]:bg-transparent"
-            >
+            <Link href="/" className={navLinkClass}>
               Home
             </Link>
           </NavigationMenuLink>
@@ -134,10 +143,7 @@ function DesktopNav() {
         {/* TEAM */}
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link
-              href={serviceLinks.team}
-              className="px-3 py-2 rounded-md hover:text-teal-300 transition hover:bg-transparent focus:bg-transparent active:bg-transparent data-active:bg-transparent data-[state=open]:bg-transparent"
-            >
+            <Link href={serviceLinks.team} className={navLinkClass}>
               Team
             </Link>
           </NavigationMenuLink>
@@ -146,10 +152,7 @@ function DesktopNav() {
         {/* CONTACT */}
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link
-              href="/#contact"
-              className="px-3 py-2 rounded-md hover:text-teal-300 transition hover:bg-transparent focus:bg-transparent active:bg-transparent data-active:bg-transparent data-[state=open]:bg-transparent"
-            >
+            <Link href="/#contact" className={navLinkClass}>
               Contact
             </Link>
           </NavigationMenuLink>
@@ -158,10 +161,7 @@ function DesktopNav() {
         {/* ABOUT */}
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Link
-              href={serviceLinks.about}
-              className="px-3 py-2 rounded-md hover:text-teal-300 transition hover:bg-transparent focus:bg-transparent active:bg-transparent data-active:bg-transparent data-[state=open]:bg-transparent"
-            >
+            <Link href={serviceLinks.about} className={navLinkClass}>
               About
             </Link>
           </NavigationMenuLink>

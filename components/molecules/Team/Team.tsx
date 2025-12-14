@@ -7,21 +7,21 @@ const Team = () => {
         "A retired Nayeb Subedar from the Indian Army, Mr. Mishra founded MSS Security with a vision to bring military-grade discipline, integrity, and professionalism into the security industry.",
       name: "Retd. Nayeb Subedar, Mr. Pramod Kumar Mishra, Indian Army",
       designation: "Founder & Managing Director",
-      src: "https://res.cloudinary.com/dggdpeaw4/image/upload/v1765268429/WhatsApp_Image_2025-12-09_at_12.50.48_d1dedf9c_jacw6b.jpg",
+      src: "https://res.cloudinary.com/dggdpeaw4/image/upload/v1765707804/Gemini_Generated_Image_mrf82umrf82umrf8_boen9b.png",
     },
     {
       quote:
         "From secure infrastructure design to real-time incident response, our focus has always been building resilient systems that protect businesses against evolving cyber threats.",
       name: "Mr. Prashant Mishra",
       designation: "Director – Operations & Business Growth",
-      src: "https://res.cloudinary.com/dggdpeaw4/image/upload/v1765269701/WhatsApp_Image_2025-12-09_at_12.53.10_77f09677_flaxfw.jpg",
+      src: "https://res.cloudinary.com/dggdpeaw4/image/upload/v1765706967/WhatsApp_Image_2025-12-14_at_09.25.31_deadcc67_jbbr8s.jpg",
     },
     {
       quote:
         "Our operations team leverages automation, continuous monitoring, and strict governance controls to ensure every client environment remains protected and performant at scale.",
       name: "Mr. Sanjay Mishra",
       designation: "Advisor & Head of Field Operations",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
+      src: "https://res.cloudinary.com/dggdpeaw4/image/upload/v1765268429/WhatsApp_Image_2025-12-09_at_12.50.48_d1dedf9c_jacw6b.jpg",
     },
   ];
 

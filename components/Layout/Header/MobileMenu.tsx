@@ -172,7 +172,7 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
           <div className="flex flex-col gap-3">
             {/* Call CTA */}
             <a
-              href="tel:+911234567890"
+              href={`tel:+${WP_NUMBER}`}
               className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-linear-to-r from-teal-400 to-cyan-400 text-black font-semibold py-3 hover:opacity-95 transition"
             >
               <Phone className="h-4 w-4" />
