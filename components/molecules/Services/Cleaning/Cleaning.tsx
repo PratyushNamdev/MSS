@@ -3,15 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
+import { serviceLinks } from "@Constants";
 
 export default function Cleaning() {
   return (
     <div className="flex flex-col md:flex-row gap-10 items-start justify-center max-w-[1440px] bg-[#101828] mt-10 py-4 md:p-0 sticky lg:hidden top-16 z-30">
       <div className="w-full md:w-1/2 flex lg:items-start justify-center max-h-[300px]">
         <Link
-          href="https://urbancartel.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href={serviceLinks.cleaningAndHygiene}
           className="w-full rounded-xl overflow-hidden shadow-md"
         >
           <Image
@@ -40,7 +39,7 @@ export default function Cleaning() {
 
         {/* Popover Buttons */}
         <div className="mt-4 flex gap-4 text-sm items-center">
-          <Link href={"/cleaning-and-hygiene-services"} className="text-sm">
+          <Link href={serviceLinks.cleaningAndHygiene} className="text-sm">
             <div
               className="
                     bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold 

@@ -12,6 +12,7 @@ import {
   DoorClosed,
   BadgeCheck,
 } from "lucide-react";
+import { serviceLinks } from "./ServiceLinks";
 
 export const serviceData = [
   // ============================================================
@@ -48,7 +49,9 @@ export const serviceData = [
       { name: "Night Checking", icon: <CalendarCheck size={14} /> },
       { name: "Security Gates", icon: <DoorClosed size={14} /> },
     ],
-    links: [{ label: "Explore Security Services", href: "/security-services" }],
+    links: [
+      { label: "Explore Security Services", href: serviceLinks.security },
+    ],
   },
 
   // ============================================================
@@ -84,7 +87,7 @@ export const serviceData = [
     links: [
       {
         label: "Explore Cleaning & Hygiene Services",
-        href: "/cleaning-and-hygiene-services",
+        href: serviceLinks.cleaningAndHygiene,
       },
     ],
   },
@@ -120,7 +123,7 @@ export const serviceData = [
     links: [
       {
         label: "Explore Facility & Support Management",
-        href: "/facility-and-support-services",
+        href: serviceLinks.facilityManagement,
       },
     ],
   },

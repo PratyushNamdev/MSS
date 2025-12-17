@@ -1,14 +1,9 @@
-import { serviceData } from "./ServiceData";
-import { serviceLinks } from "./ServiceLinks";
+import { securityServices, securityCategories } from "./security";
 import {
-  securityServices,
-  securityCategories,
   cleaningAndHygieneServices,
   cleaningAndHygieneCategories,
-} from "./services";
+} from "./cleaning-and-hygiene";
 export {
-  serviceData,
-  serviceLinks,
   securityServices,
   securityCategories,
   cleaningAndHygieneServices,

@@ -3,14 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
+import { serviceLinks } from "@Constants";
 export default function SecurityServices() {
   return (
     <div className="flex flex-col md:flex-row gap-10 items-start justify-center max-w-[1442px] bg-[#101828] mx-auto sticky lg:hidden top-16 z-20">
       {/* Image */}
       <div className="w-full md:w-1/2 flex lg:items-start justify-center">
         <Link
-          href="https://mealbridge-demo.vercel.app"
-          rel="noopener noreferrer"
+          href={serviceLinks.security}
           className="w-full rounded-xl overflow-hidden shadow-md max-h-[300px]"
         >
           <Image
@@ -40,7 +40,7 @@ export default function SecurityServices() {
 
         {/* Buttons */}
         <div className="mt-4 flex gap-4 text-sm items-center">
-          <Link href={"/security-services"} className="text-sm">
+          <Link href={serviceLinks.security} className="text-sm">
             <div
               className="
                     bg-teal-500 hover:bg-teal-600 text-gray-900 font-semibold 

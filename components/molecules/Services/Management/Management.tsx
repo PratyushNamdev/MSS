@@ -3,15 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
+import { serviceLinks } from "@Constants";
 
 export default function Management() {
   return (
     <div className="lg:hidden flex flex-col md:flex-row gap-10 items-start justify-center max-w-[1440px] mt-10 z-50 bg-[#101828] py-4 md:p-0 relative">
       <div className="w-full md:w-1/2 flex lg:items-start justify-center max-h-[300px]">
         <Link
-          href="https://what-sappwebclone.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href={serviceLinks.facilityManagement}
           className="w-full rounded-xl overflow-hidden shadow-md"
         >
           <Image
@@ -40,7 +39,7 @@ export default function Management() {
 
         {/* Buttons */}
         <div className="mt-6 flex gap-4 text-sm items-center">
-          <Link href={"/facility-and-support-services"} className="text-sm">
+          <Link href={serviceLinks.facilityManagement} className="text-sm">
             <div
               className="
                     bg-teal-500 hover:bg-teal-600 text-gray-900 font-bold 
