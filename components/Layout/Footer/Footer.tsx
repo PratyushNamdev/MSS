@@ -1,9 +1,9 @@
-// components/Footer.tsx
 "use client";
 import { PhoneCall } from "lucide-react";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
+import { serviceLinks } from "@Constants";
 const COLORS = {
   primary: "#2dd4bf", // teal-300
   accent: "#22d3ee", // cyan-400
@@ -180,7 +180,12 @@ export default function Footer() {
               >
                 {securityServices.map((s) => (
                   <li key={s}>
-                    <Link href="#" className="hover:text-cyan-300 transition">
+                    <Link
+                      href={`${serviceLinks.security}/#${s
+                        .toLowerCase()
+                        .replace(/\s+/g, "-")}`}
+                      className="hover:text-cyan-300 transition"
+                    >
                       {s}
                     </Link>
                   </li>
@@ -195,7 +200,12 @@ export default function Footer() {
               <ul className="space-y-2 text-sm" style={{ color: COLORS.muted }}>
                 {cleaningServices.map((s) => (
                   <li key={s}>
-                    <Link href="#" className="hover:text-cyan-300 transition">
+                    <Link
+                      href={`${serviceLinks.cleaningAndHygiene}/#${s
+                        .toLowerCase()
+                        .replace(/\s+/g, "-")}`}
+                      className="hover:text-cyan-300 transition"
+                    >
                       {s}
                     </Link>
                   </li>
@@ -210,7 +220,12 @@ export default function Footer() {
               <ul className="space-y-2 text-sm" style={{ color: COLORS.muted }}>
                 {facilityServices.map((s) => (
                   <li key={s}>
-                    <Link href="#" className="hover:text-cyan-300 transition">
+                    <Link
+                      href={`${serviceLinks.facilityManagement}/#${s
+                        .toLowerCase()
+                        .replace(/\s+/g, "-")}`}
+                      className="hover:text-cyan-300 transition"
+                    >
                       {s}
                     </Link>
                   </li>

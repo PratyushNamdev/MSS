@@ -65,6 +65,7 @@ export default function SecurityServicesNarrative() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
+                  id={service.name.replace(/\s+/g, "-").toLowerCase()}
                   className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center`}
                 >
                   {/* Image */}

@@ -5,6 +5,8 @@ import {
   securityCategories,
   cleaningAndHygieneServices,
   cleaningAndHygieneCategories,
+  facilityAndManagementServices,
+  facilityAndManagementCategories,
 } from "./services";
 export {
   serviceData,
@@ -13,4 +15,6 @@ export {
   securityCategories,
   cleaningAndHygieneServices,
   cleaningAndHygieneCategories,
+  facilityAndManagementServices,
+  facilityAndManagementCategories,
 };
