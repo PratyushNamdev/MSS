@@ -8,6 +8,7 @@ import {
   facilityAndManagementServices,
   facilityAndManagementCategories,
 } from "./services";
+import { murtiTeam } from "./TeamData";
 export {
   serviceData,
   serviceLinks,
@@ -17,4 +18,5 @@ export {
   cleaningAndHygieneCategories,
   facilityAndManagementServices,
   facilityAndManagementCategories,
+  murtiTeam,
 };

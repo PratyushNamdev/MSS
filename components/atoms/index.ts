@@ -6,6 +6,7 @@ import MovingCards from "./MovingCards";
 import AnimatedCards from "./AnimatedCards";
 import SparklesCore from "./Sparkles";
 import Compare from "./Compare";
+import FollowerPointerCard from "./FollowPointer";
 export {
   ToggleTheme,
   ThemeProvider,
@@ -15,4 +16,5 @@ export {
   AnimatedCards,
   SparklesCore,
   Compare,
+  FollowerPointerCard,
 };
