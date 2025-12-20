@@ -54,15 +54,10 @@ export default function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
         side="right"
         className="w-[85%] sm:w-[400px] max-w-full h-full bg-[#0f1724] text-gray-100 flex flex-col p-5 border-none"
       >
-        <SheetHeader className="flex items-center justify-between gap-4">
+        <SheetHeader className="flex items-center justify-between gap-4 py-4 px-0">
           <div className="flex items-center gap-3">
-            <div className="relative h-10 w-10 rounded-md overflow-hidden">
-              <Image
-                src="/logo1.png"
-                alt="Logo"
-                fill
-                className="object-cover"
-              />
+            <div className="relative h-10 w-10 overflow-hidden">
+              <Image src="/main.png" alt="Logo" fill className="object-cover" />
             </div>
 
             <div>

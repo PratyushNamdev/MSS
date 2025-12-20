@@ -21,15 +21,16 @@ export default function Header() {
   return (
     <header className="w-full bg-[#101828] backdrop-blur-md transition-colors duration-300">
       <div className="max-w-[1400px] mx-auto flex items-center justify-between px-4 py-3">
-        {/* Left: Logo + Name */}
         <div className="flex items-center gap-2">
           <Image
-            src="/logo1.png"
+            src="/main.png"
             alt="Company Logo"
             width={40}
             height={40}
-            className="rounded-md"
+            sizes="(max-width: 768px) 30px, 40px"
+            priority
           />
+
           <span className="text-sm md:text-lg font-semibold tracking-tight text-white">
             MSS & Facility Management
           </span>

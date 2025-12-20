@@ -68,10 +68,23 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               {/* circular logo badge */}
               <div
-                className="h-10 w-10 rounded-full flex items-center justify-center font-semibold text-sm"
+                className="
+      relative
+      flex items-center justify-center
+      rounded-full
+      h-11 w-11
+      sm:h-10 sm:w-10
+      shrink-0
+    "
                 aria-hidden
               >
-                <Image height={100} width={100} src={"/logo1.png"} alt="Logo" />
+                <Image
+                  src="/main.png"
+                  alt="Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </div>
 
               <div>
@@ -249,13 +262,13 @@ export default function Footer() {
 
           <div className="flex items-center gap-6">
             <nav className="flex items-center gap-4">
-              <Link href="#" className="hover:text-white transition">
+              <Link href="#" className="hover:text-white transition hidden">
                 Privacy
               </Link>
-              <Link href="#" className="hover:text-white transition">
+              <Link href="#" className="hover:text-white transition hidden">
                 Terms
               </Link>
-              <Link href="#" className="hover:text-white transition">
+              <Link href="#" className="hover:text-white transition hidden">
                 Sitemap
               </Link>
             </nav>
